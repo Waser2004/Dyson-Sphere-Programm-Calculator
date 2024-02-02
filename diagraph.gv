@@ -1,0 +1,23 @@
+digraph {
+	b0 [label="manufacturing, 15.0"]
+	b1 [label="smelting, 10.0"]
+	b2 [label="smelting, 10.0"]
+	b3 [label="smelting, 25.0"]
+	i0 [label="Material 3, 10.0, 0"]
+	b0 -> i0
+	b3 -> i0
+	i1 [label="Material 4, 10.0, 0.0"]
+	b0 -> i1
+	i2 [label="Material 2, 10.0, 0"]
+	b1 -> i2
+	i2 -> b0
+	i3 [label="Material 1, 10.0, 0"]
+	b2 -> i3
+	i3 -> b0
+	i4 [label="Ore 2, 40.0, 0"]
+	i4 -> b1
+	i4 -> b3
+	i5 [label="Ore 1, 30.0, 0"]
+	i5 -> b2
+	i5 -> b3
+}
